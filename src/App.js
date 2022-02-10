@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component }  from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class Salada extends Component {
+
+state = {
+
+	ingrediente: [{quantidade:1, legume: "Alface"},
+
+        {quantidade:3, legume: "Tomate"},
+
+        {quantidade:"200g", legume: "milho"},
+
+        {quantidade:"100g", legume: "azeitonas"},
+
+        {quantidade:"150g", legume: "palmito"},
+
+        {quantidade:1,
+          legume: "pepino"},       
+      ]
 }
-
-export default App;
+  render() {
+    return(
+<div>
+{this.state.ingrediente.map ((item) =>(
+<div>
+  <p>Lista de itens da Salada {item.quantidade} {item.legume}</p>
+  </div>
+))}
+      </div>
+    )
+  }
+}
+export default Salada
