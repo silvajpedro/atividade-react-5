@@ -10,7 +10,7 @@ state = {
 
         {quantidade:"200g", legume: "milho"},
 
-        {quantidade:"100g", legume: "azeitonas"},
+        {quantidade:"110g", legume: "azeitonas"},
 
         {quantidade:"150g", legume: "palmito"},
 
